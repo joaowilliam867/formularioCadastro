@@ -110,7 +110,7 @@ header span {
   border: 2px solid #5ce1e6;
   border-radius: 0.3rem;
 
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .input-field input::placeholder {
@@ -322,6 +322,13 @@ a.create-acc:hover {
 }
 
 /*PAGINA DE LOGIN================*/
+.sm-logo {
+  height: 3rem;
+  padding: 0.3rem;
+  box-sizing: content-box;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
 .login-header {
  margin-bottom: 2rem;
  display: flex;
