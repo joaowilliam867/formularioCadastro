@@ -263,7 +263,7 @@ a.create-acc:hover {
 }
 
 /*RESPONSIVIDADE ====================================*/
-@media screen and (max-width: 840px){
+@media screen and (max-width: 1200px){
 
   main.container {
     background: url("/assets/images/backgroundAstronaut-opacity.svg");
