@@ -38,14 +38,9 @@ a {
 main.container {
   background: url("/assets/images/backgroundAstronaut-opacity.svg");
   background-size: cover;
- 
+
   height: 100vh;
   width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 
@@ -64,6 +59,7 @@ header h1 {
   margin-bottom: -15px;
 }
 
+
 header span {
   color: white;
   font-weight: lighter;
@@ -71,18 +67,16 @@ header span {
 }
 
 /*WRAPPER ------------- */
-.wrapper
- {
+.wrapper {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 
   margin: auto;
-  margin-bottom: 1rem;
-  padding: 10px;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
 
-  width: 50%;
-  height: 100%;
+  width: 70%;
 
   background: rgba(255, 255, 255, 0.2);
 
@@ -100,12 +94,10 @@ header span {
   width: 100%;
   margin-bottom: 1rem;
   padding: 0.2rem;
-
 }
 
 .input-field input {
   outline: none;
-  padding: 8px 20px 8px 20px;
   
   border: 2px solid #5ce1e6;
   border-radius: 0.3rem;
@@ -178,19 +170,12 @@ justify-content: space-evenly;
 
 .social-field {
   margin-bottom: 1rem;
-  padding: 0.65rem 1rem;
+  padding: 0.2rem 1rem;
 
   border-radius: 0.25rem;
 
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 
-  width: 250px;
-} 
-
-.social-field:hover{
-  transform: scale(1.1);
-
-  transition: all 0.5s ease;
 }
 
 .social-field.google {
@@ -211,6 +196,11 @@ justify-content: space-evenly;
   margin-right: 10px;
 }
 
+.social-field.facebook {
+  background: #1976D2;
+  font-weight: 100;
+}
+
 .social-field.facebook a,
 .social-field.linkedin a
  {
@@ -218,13 +208,8 @@ justify-content: space-evenly;
   align-items: center;
 }
 
-.social-field.facebook {
-  background: linear-gradient(to right, #1976D2 70%, #53adda);
-  font-weight: 100;
-}
-
 .social-field.linkedin {
-  background: linear-gradient(to left, #0f5397 10%, #007AB9);
+  background: #007AB9;
   font-weight: 100;
 }
 
@@ -238,26 +223,22 @@ justify-content: space-evenly;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 2rem;
-
 }
 
-/* .footer img {
+.footer img {
   position: absolute;
   left: 70%;
 
   height: 50px;
-} */
+}
 
-.footer a,
-a.create-acc {
+.footer a{
   font-weight: 100;
-  font-size: 14px;
+  font-size: 12px;
   color: var(--blue-opacity-minus);
 }
 
-.footer a:hover,
-a.create-acc:hover {
+.footer a:hover {
   color: #fff;
   text-decoration: underline;
 }
@@ -322,52 +303,10 @@ a.create-acc:hover {
 }
 
 /*PAGINA DE LOGIN================*/
-.login-header {
- margin-bottom: 2rem;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center; 
-}
 
-.login-header h2 {
-  font-size: 40px;
-  font-weight: 400;
-  background: var(--blue-gradiente-blue);
-  -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
- position: relative;
-}
-
-.login-header h2::before {
-  content: '';
-  position: absolute;
-  height: 4px;
-  width: 45px;
-  bottom: 8px;
-  left: 0;
-  border-radius: 8px;
-  /* background:linear-gradient(45deg, #8e2de2, #4a00e0); */
-  background: var(--blue-gradiente-blue-inverso);
-  /* background: #fff; */
-}
-
-.fa-user-circle {
-  color: #00ADA4;
-}
-
-
-.wrapper.login {
+.wrapper {
   flex-direction: column;
-  width: 30%;
-  margin-top: 1rem;
-
-  background: rgba(255, 255, 255, 0.2);
-
-  border-radius: 0.5rem;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
 }
-
 #forgot-password {
   color: var(--blue-opacity-minus);
   font-weight: 100; 
@@ -382,62 +321,5 @@ a.create-acc:hover {
 }
 
 .input-field.user  input{
-  background: url('/assets/images/user-solid.svg');
-  background-position: 10px 12px;
-  background-repeat: no-repeat;
-  background-size: 16px;
-  font-size: 16px;
-  padding: 8px 20px 8px 40px;
-  background-color: #fff;
-}
-
-.input-field.password  input{
-  background: url('/assets/images/key-solid.svg');
-  background-position: 10px 12px;
-  background-repeat: no-repeat;
-  background-size: 16px;
-  font-size: 16px;
-  padding: 8px 20px 8px 40px;
-  background-color: #fff;
-}
-.login-button {
-  margin-top: 2rem;
-  width: 100%;
-}
-
-#button-login {
-  width: 80%;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-span.connect {
-color: var(--blue-opacity-minus);
-margin: 1rem;
-font-weight: 100;
-font-size: 14px;
-}
-
-.section2.login {
-  /* margin-bottom: 2rem; */
-}
-
-@media screen and (max-width: 1000px){
-
-.wrapper.login {
-  flex-direction: column;
-  width: 50%;
-  margin-top: 1rem;
-
-  background: none;
-
-  border-radius: none;
-  box-shadow: none;
-}
-
-span {
-  text-align: center;
-}
+  background: url(https://fontawesome.com/icons/user?style=solid);
 }
