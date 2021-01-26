@@ -9,7 +9,7 @@
 <a href="https://www.linkedin.com/in/soaresmilton/" target="_blank">
 <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /> 
 </a>
-<a href="https://www.youtube.com/channel/UCMsbUh0LDOMQCTBdBXwkFiQ" target="_blank">
+<a href="https://www.youtube.com/watch?v=5I6rfbIVim0" target="_blank">
 <img src="https://img.shields.io/badge/youtube-%23FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white" />
 </a>
 <a href="https://www.instagram.com/soaresmiltinho/" target="_blank">
