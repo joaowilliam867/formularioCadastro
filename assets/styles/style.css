@@ -133,13 +133,14 @@ header span {
   font-weight: 400;
 
   cursor: pointer;
+  transition: all 0.5s ease;
+
 }
 
 .button button:hover {
   background: var(--blue-gradiente-blue-inverso);
   transform: scale(1.05);
 
-  transition: all 0.5s ease;
 }
 
 label.agree{
@@ -185,12 +186,13 @@ justify-content: space-evenly;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 
   width: 250px;
+  transition: all 0.5s ease;
+
 } 
 
 .social-field:hover{
   transform: scale(1.1);
 
-  transition: all 0.5s ease;
 }
 
 .social-field.google {
